@@ -1,0 +1,44 @@
+.title {
+    color: #97EDAA;
+    font-weight: 400;
+    font-family: 'Fira Code', monospace;
+    justify-content: baseline;
+}
+.header {
+    width: 1216px;
+    height: auto;
+    top: 94px;
+    border: 2px solid #101010;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    border-left: none;
+    border-right: none;
+}
+
+.button-header {
+    background-color: transparent;
+    border: 0;
+    color: white;
+    margin: 20px;
+}
+
+.content {
+    width: 1216px;
+    height: 500px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: baseline;
+    color: white;
+}
+.name {
+    color: #97EDAA;
+    font-size: xx-large;
+    margin: 10px 0 30px;
+}
+.descricao {
+    font-family: 'Fira Code', monospace;
+    font-size: x-large;
+}
