@@ -22,6 +22,7 @@
     border: 0;
     color: white;
     margin: 20px;
+    cursor: pointer;
 }
 
 .content {
@@ -41,4 +42,14 @@
 .descricao {
     font-family: 'Fira Code', monospace;
     font-size: x-large;
+}
+#curriculo {
+    background-color: #97EDAA;
+    width: 193px;
+    height: 37px;
+    font-family: 'Archivo';
+    font-size: medium;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
