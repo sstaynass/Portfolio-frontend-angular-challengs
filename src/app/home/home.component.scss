@@ -85,3 +85,25 @@
     font-size: 32px;
     font-weight: 100;
 }
+.redes {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 827px;
+    margin: auto;
+}
+#copy-rede {
+    height: 62px;
+    width: 62px;
+    background-color: #1F1F1F;
+    border-radius: 100%;
+    cursor: pointer;
+    border: 1px solid gray;
+}
+#spam-rede {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
