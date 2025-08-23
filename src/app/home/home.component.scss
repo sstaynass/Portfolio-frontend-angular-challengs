@@ -100,6 +100,9 @@
     border-radius: 100%;
     cursor: pointer;
     border: 1px solid gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 #spam-rede {
     display: flex;

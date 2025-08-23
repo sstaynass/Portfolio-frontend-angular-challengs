@@ -14,7 +14,7 @@
         Olá, eu sou 
         <div class="name">Tayna Soares</div>
         Desenvolvedora Frontend
-        <button id="curriculo"> Baixar curriculo </button>
+        <button id="curriculo"> <a href="Tayna_Soares_Curriculo.pdf" download> Baixar curriculo </a> </button>
     </div>
     <img src="image.svg" alt="image">
 </div>
@@ -26,32 +26,23 @@
 </div>
 <div class="redes">
     <div class="me" id="spam-rede">
-        <button id="copy-rede"> <img src="smile.svg" alt="smile" height="32" width="32"> </button>
+        <button (click)="copiarTexto(secao1)" id="copy-rede"> <img src="smile.svg" alt="smile" height="32" width="32"> </button>
         <p id="legenda">Nome</p>
-        Tayna Soares
+        <div #secao1>Tayna Soares</div>
     </div>
     <div class="e-mail" id="spam-rede">
-        <button id="copy-rede"> <img src="mail.svg" alt="mail" height="32" width="32"> </button>
+        <button (click)="copiarTexto(secao2)" id="copy-rede"> <img src="mail.svg" alt="mail" height="32" width="32"> </button>
         <p id="legenda">E-mail</p>
-        <p>taynasoares203&#64;gmail.com</p>
+        <div #secao2>taynasoares203&#64;gmail.com</div>
     </div>
     <div class="instagram" id="spam-rede">
-        <button id="copy-rede"> <img src="instagram.svg" alt="instagram" height="32" width="32"> </button>
+        <button (click)="copiarTexto(secao3)" id="copy-rede"> <img src="instagram.svg" alt="instagram" height="32" width="32"> </button>
         <p id="legenda">Instagram</p>
-        <p>&#64;tay.soarezs</p>
+        <div #secao3>&#64;tay.soarezs</div>
     </div>
     <div class="telefone" id="spam-rede">
-        <button id="copy-rede"> <img src="phone.svg" alt="phone" height="32" width="32"> </button>
+        <button (click)="copiarTexto(secao4)" id="copy-rede"> <img src="phone.svg" alt="phone" height="32" width="32"> </button>
         <p id="legenda">Telefone</p>
-        <p>&#40;11&#41; 99806-8567</p>
+        <div #secao4>&#40;11&#41; 99806-8567</div>
     </div>
-</div>
-<div class="Projetos">
-    <p>Projetos</p>
-</div>
-<div class="Servicos">
-    <p>Serviços</p>
-</div>
-<div class="Habilidades">
-    <p>Habilidades</p>
 </div>
