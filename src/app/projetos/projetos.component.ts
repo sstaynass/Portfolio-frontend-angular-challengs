@@ -1,11 +1,13 @@
-import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-projetos',
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './projetos.component.html',
-  styleUrl: './projetos.component.scss'
+  styleUrls: ['./projetos.component.scss']
 })
 export class ProjetosComponent {
-
+  @Input() imagem!: string;
+  @Input() titulo!: string;
 }

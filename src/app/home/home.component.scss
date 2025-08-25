@@ -100,13 +100,20 @@
     border-radius: 100%;
     cursor: pointer;
     border: 1px solid gray;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 #spam-rede {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+}
+.titulo {
+    color: #97EDAA;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    font-weight: 200;
+    font-size: 32px;
+    margin: auto;
+    padding: 150px 0 0 0;
 }

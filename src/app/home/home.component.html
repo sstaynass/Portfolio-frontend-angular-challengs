@@ -2,23 +2,23 @@
 <div class="header">
     <div class="title">&lt;Tayna Soares/&gt;</div>
     <div> 
-        <button class="button-header" id="inicio"> Inicio </button>
-        <button class="button-header" id="sobre-mim"> Sobre mim </button>
-        <button class="button-header" id="projetos"> Projetos </button>
-        <button class="button-header" id="servicos"> Serviços </button>
-        <button class="button-header" id="habilidades"> Habilidades </button>
+        <button (click)="scrollTo('inicio')" class="button-header" id="inicio"> Inicio </button>
+        <button (click)="scrollTo('sobre-mim')" class="button-header" id="sobre-mim"> Sobre mim </button>
+        <button (click)="scrollTo('projetos')" class="button-header" id="projetos"> Projetos </button>
+        <button (click)="scrollTo('servicos')" class="button-header" id="servicos"> Serviços </button>
+        <button (click)="scrollTo('habilidades')" class="button-header" id="habilidades"> Habilidades </button>
     </div>
 </div>
 <div class="content">
-    <div class="descricao">
+    <div class="descricao" id="inicio">
         Olá, eu sou 
         <div class="name">Tayna Soares</div>
         Desenvolvedora Frontend
-        <button id="curriculo"> <a href="Tayna_Soares_Curriculo.pdf" download> Baixar curriculo </a> </button>
+        <button id="curriculo" (click)="baixarCurriculo()"> Baixar curriculo </button>
     </div>
     <img src="image.svg" alt="image">
 </div>
-<div class="sobre-mim-titulo">Sobre mim</div>
+<div class="sobre-mim-titulo" id="sobre-mim">Sobre mim</div>
 <div class="footer">
     Meu nome é Tayná Soares, ou "tay dev" (é como me chamam no atual trabalho).
     Atualmente sou estagiária como Frontend Developer no Itaú Unibanco. Anteriormente fui jovem aprendiz na IBM
@@ -46,3 +46,7 @@
         <div #secao4>&#40;11&#41; 99806-8567</div>
     </div>
 </div>
+  <div class="titulo" id="projetos">
+        Projetos
+    </div>
+<app-projetos *ngFor="let projeto of projetos" [imagem]= "projeto.imagem" [titulo]= "projeto.titulo"></app-projetos>
