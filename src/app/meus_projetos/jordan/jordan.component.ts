@@ -7,5 +7,6 @@ import { Component } from '@angular/core';
   styleUrl: './jordan.component.scss'
 })
 export class JordanComponent {
+jordanshoes: any;
 
 }
