@@ -4,7 +4,7 @@
     <div> 
         <button (click)="scrollTo('inicio')" class="button-header" id="inicio"> Inicio </button>
         <button (click)="scrollTo('sobre-mim')" class="button-header" id="sobre-mim"> Sobre mim </button>
-        <button (click)="scrollTo('projetos')" class="button-header" id="projetos"> Projetos </button>
+        <button (click)="scrollTo('meus-projetos')" class="button-header" id="projetos"> Projetos </button>
         <button (click)="scrollTo('servicos')" class="button-header" id="servicos"> Serviços </button>
         <button (click)="scrollTo('habilidades')" class="button-header" id="habilidades"> Habilidades </button>
     </div>
@@ -46,7 +46,10 @@
         <div #secao4>&#40;11&#41; 99806-8567</div>
     </div>
 </div>
-  <div class="titulo" id="projetos">
+  <div class="titulo" id="meus-projetos">
         Projetos
     </div>
-<app-projetos *ngFor="let projeto of projetos" [imagem]= "projeto.imagem" [titulo]= "projeto.titulo"></app-projetos>
+    <div class="projetos">
+        <app-jordan></app-jordan>
+        <app-ghibli></app-ghibli>
+    </div>

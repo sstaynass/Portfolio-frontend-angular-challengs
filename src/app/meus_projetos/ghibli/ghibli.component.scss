@@ -1,0 +1,42 @@
+.projeto-ghibli img {
+    width: 592px;
+    height: 200px;
+}
+.projeto-ghibli {
+    color: white;
+    font-size: 24px;                                
+    width: 592px;
+    height: 371px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.projeto-ghibli .descricao-projeto {
+    color: #97EDAA;
+    font-size: 18px;
+}
+.botao {
+    background-color: #97EDAA;
+    width: 193px;
+    height: 37px;
+    font-family: 'Archivo';
+    font-size: medium;
+    font-weight: 500;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px 20px 0 0;
+}
+.botao2 {
+    background-color: transparent;
+    border: 2px solid #97EDAA;
+    color: #97EDAA;
+    width: 193px;
+    height: 37px;
+    font-family: 'Archivo';
+    font-size: medium;
+    font-weight: 500;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px 0 0 0;
+}

@@ -1,10 +1,11 @@
 import { Component, ElementRef, ViewChild } from '@angular/core';
-import { ProjetosComponent } from "../projetos/projetos.component";
 import { CommonModule } from '@angular/common';
+import { JordanComponent } from "../meus_projetos/jordan/jordan.component";
+import { GhibliComponent } from "../meus_projetos/ghibli/ghibli.component";
 
 @Component({
   selector: 'app-home',
-  imports: [ProjetosComponent, CommonModule],
+  imports: [CommonModule, JordanComponent, GhibliComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })
@@ -12,15 +13,18 @@ export class HomeComponent {
   projetos = [
     {
       imagem: 'jordanshoes.png',
-      titulo: 'Jordan Shoes'
+      titulo: 'Jordan Shoes',
+      descricao: 'javascript, html, css, angular'
     },
     {
-      imagem: 'caminho/para/imagem2.jpg',
-      titulo: 'Projeto 2'
+      imagem: 'studioghibli.png',
+      titulo: 'Studio Ghibli streaming',
+      descricao: 'javascript, html, css, angular'
     },
     {
       imagem: 'caminho/para/imagem3.jpg',
-      titulo: 'Projeto 3'
+      titulo: 'Projeto 3',
+      descricao: 'javascript, html, css, angular'
     }
   ];
 
