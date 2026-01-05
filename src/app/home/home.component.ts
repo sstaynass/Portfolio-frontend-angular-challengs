@@ -10,6 +10,7 @@ import { GhibliComponent } from "../meus_projetos/ghibli/ghibli.component";
   styleUrl: './home.component.scss'
 })
 export class HomeComponent {
+  @ViewChild('textoParaCopiar') area!: ElementRef;
   projetos = [
     {
       imagem: 'jordanshoes.png',
@@ -27,8 +28,6 @@ export class HomeComponent {
       descricao: 'javascript, html, css, angular'
     }
   ];
-
-  @ViewChild('textoParaCopiar') area!: ElementRef;
 
   copiarTexto( elemento: HTMLElement) {
     const texto = elemento.innerText;
@@ -48,10 +47,10 @@ export class HomeComponent {
       element.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
   }
-  baixarCurriculo() {
-    const link = document.createElement('a');
-    link.href = 'Tayna_Soares_Curriculo.pdf';
-    link.download = 'Tayna_Soares_Curriculo.pdf';
-    link.click();
-  }
+    baixarCurriculo() {
+      const link = document.createElement('a');
+      link.href = 'Tayna_Soares_Curriculo.pdf';
+      link.download = 'Tayna_Soares_Curriculo.pdf';
+      link.click();
+    }
 }
