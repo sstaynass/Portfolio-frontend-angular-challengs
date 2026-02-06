@@ -2,10 +2,11 @@ import { Component, ElementRef, ViewChild } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { JordanComponent } from "../meus_projetos/jordan/jordan.component";
 import { GhibliComponent } from "../meus_projetos/ghibli/ghibli.component";
+import { DadosComponent } from "../components/dados/dados.component";
 
 @Component({
   selector: 'app-home',
-  imports: [CommonModule, JordanComponent, GhibliComponent],
+  imports: [CommonModule, JordanComponent, GhibliComponent, DadosComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })
@@ -28,18 +29,6 @@ export class HomeComponent {
       descricao: 'javascript, html, css, angular'
     }
   ];
-
-  copiarTexto( elemento: HTMLElement) {
-    const texto = elemento.innerText;
-    navigator.clipboard.writeText(texto)
-      .then(() => {
-        console.log('Texto copiado');
-      })
-      .catch(err => {
-        console.error('Erro ao copiar texto: ', err);
-      });
-      alert('Texto copiado');
-  }
 
   scrollTo(section: string) {
     const element = document.getElementById(section);
